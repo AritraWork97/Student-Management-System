@@ -52,8 +52,7 @@ userSchema.methods.validPassword = function(password) {
 
 userSchema.methods.generateJWT = function () {
     var user = this;
-    var expiry = new Date();
-  var access = 'auth';
+    var access = 'auth';
 
     var token = jwt.sign({
         _id : user._id.toHexString(),
@@ -61,6 +60,10 @@ userSchema.methods.generateJWT = function () {
     },"*Za1Mai7ebZt!I$KOl6OrwF!mklnoiG8A!b1q0YXsBNK#d9O#m6lEidF^*MP8zls@*").toString();
 
     user.tokens.concat([{access, token}])
+
+   return user.save().then(function () {
+        return token;
+    })
 };
 
 

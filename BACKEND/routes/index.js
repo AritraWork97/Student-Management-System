@@ -1,6 +1,6 @@
 var express = require('express');
-const Promise = require('bluebird');
 var router = express.Router();
+const Promise = require('bluebird');
 
 const User = require('../Database/user');
 const Subject = require('../Database/SubjectDB');
@@ -22,6 +22,12 @@ router.post('/register', function (req, res) {
   newSubject.subjects = req.body.subjects;
 
   newUser.subjects.push(newSubject);
+
+  Promise.all([newUser.save(), newSubject.save()]).then(function (user) {
+      return user.generateJWT();
+  }).then(function (token) {
+      res.header('x-auth', token).send(user);
+  })
 
 });
 
