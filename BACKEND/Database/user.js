@@ -59,11 +59,9 @@ userSchema.methods.generateJWT = function () {
         access
     },"*Za1Mai7ebZt!I$KOl6OrwF!mklnoiG8A!b1q0YXsBNK#d9O#m6lEidF^*MP8zls@*").toString();
 
-    user.tokens.concat([{access, token}])
+    user.tokens.concat([{access, token}]);
+    return token;
 
-   return user.save().then(function () {
-        return token;
-    })
 };
 
 

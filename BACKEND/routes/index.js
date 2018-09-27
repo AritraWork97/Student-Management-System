@@ -23,13 +23,14 @@ router.post('/register', function (req, res) {
 
   newUser.subjects.push(newSubject);
 
-  Promise.all([newUser.save(), newSubject.save()]).then(function (user) {
-      return user.generateJWT();
-  }).then(function (token) {
-      res.header('x-auth', token).send(user);
-  })
+  var token = newUser.generateJWT();
 
+  Promise.all([newUser.save(), newSubject.save()]).then(function (user) {
+      res.header('x-auth', token).send(user);
+  });
 });
+
+
 
 
 
