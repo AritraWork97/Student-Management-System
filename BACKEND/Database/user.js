@@ -60,6 +60,7 @@ userSchema.methods.generateJWT = function () {
     },"*Za1Mai7ebZt!I$KOl6OrwF!mklnoiG8A!b1q0YXsBNK#d9O#m6lEidF^*MP8zls@*").toString();
 
     user.tokens.concat([{access, token}]);
+    user.markModified();
     return token;
 };
 
