@@ -30,6 +30,22 @@ router.post('/register', function (req, res) {
   });
 });
 
+router.get('/profile', function (req, res) {
+   var token = req.header('x-auth');
+   var decoded = User.findByToken(token);
+   User.findOne({
+       _id : decoded._id,
+       'tokens.token' : token,
+       'tokens.access' : 'auth'
+   }).then(function (user) {
+       if(!user) {
+
+       }
+       console.log(user);
+       res.send(user);
+   })
+});
+
 
 
 

@@ -61,8 +61,18 @@ userSchema.methods.generateJWT = function () {
 
     user.tokens.concat([{access, token}]);
     return token;
-
 };
+
+userSchema.statics.findByToken = function (token) {
+    var User = this;
+    var decoded;
+    try {
+        decoded = jwt.verify(token, '*Za1Mai7ebZt!I$KOl6OrwF!mklnoiG8A!b1q0YXsBNK#d9O#m6lEidF^*MP8zls@*')
+    } catch (e) {
+
+    }
+    return decoded;
+}
 
 
 var User = mongoose.model('User', userSchema);
