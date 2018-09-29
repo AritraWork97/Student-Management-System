@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d2fa12ce-19ab-417f-805f-c2f70f7f8b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BACKEND/Database/user.js" afterPath="$PROJECT_DIR$/BACKEND/Database/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BACKEND/routes/index.js" afterPath="$PROJECT_DIR$/BACKEND/routes/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +16,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BACKEND/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+            <state relative-caret-position="733">
+              <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authenticate.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BACKEND/middleware/authenticate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -70,6 +78,7 @@
         <option value="$PROJECT_DIR$/BACKEND/Database/SubjectDB.js" />
         <option value="$PROJECT_DIR$/BACKEND/Database/user.js" />
         <option value="$PROJECT_DIR$/BACKEND/routes/index.js" />
+        <option value="$PROJECT_DIR$/BACKEND/middleware/authenticate.js" />
       </list>
     </option>
   </component>
@@ -234,7 +243,7 @@
       <workItem from="1538158158459" duration="90000" />
       <workItem from="1538159325383" duration="229000" />
       <workItem from="1538186394452" duration="1998000" />
-      <workItem from="1538189542003" duration="494000" />
+      <workItem from="1538189542003" duration="1849000" />
     </task>
     <task id="LOCAL-00001" summary="The eroor is in the 'generateJWT' method. After saving the use in the index.js file, the returned user does not contain 'generateJWT' method.">
       <created>1538049570265</created>
@@ -264,14 +273,29 @@
       <option name="project" value="LOCAL" />
       <updated>1538159514020</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Error handling has been added when token does not corrospond to any saved users.">
+      <created>1538190093182</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1538190093182</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Refactored the code such that the authnticate middleware is in it's own folder now.">
+      <created>1538191259242</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1538191259242</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67874000" />
+    <option name="totallyTimeSpent" value="69229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13856691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -279,7 +303,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22608696" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22608696" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -302,7 +326,9 @@
     <MESSAGE value="The previous error has been corrected." />
     <MESSAGE value="The token is not being saved to the database." />
     <MESSAGE value="The token is now being saved to the database." />
-    <option name="LAST_COMMIT_MESSAGE" value="The token is now being saved to the database." />
+    <MESSAGE value="Error handling has been added when token does not corrospond to any saved users." />
+    <MESSAGE value="Refactored the code such that the authnticate middleware is in it's own folder now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored the code such that the authnticate middleware is in it's own folder now." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -311,13 +337,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BACKEND/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BACKEND/controller/routes_config.js" />
     <entry file="file://$PROJECT_DIR$/BACKEND/Database/user.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -633,8 +652,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BACKEND/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="733">
+          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BACKEND/middleware/authenticate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>
