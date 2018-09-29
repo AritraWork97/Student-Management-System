@@ -22,9 +22,12 @@ router.post('/register',function (req, res) {
   newUser.stream = req.body.stream;
   newUser.enrollment_number = req.body.enrollment_number;
 
+newUser.password = req.body.password;
+
   newSubject.subjects = req.body.subjects;
 
   newUser.subjects.push(newSubject);
+
 
   var token = newUser.generateJWT();
 
@@ -32,6 +35,8 @@ router.post('/register',function (req, res) {
       res.header('x-auth', token).send(user);
   });
 });
+
+
 
 router.get('/profile', authenticate,function (req, res) {
   res.send(req.user);
