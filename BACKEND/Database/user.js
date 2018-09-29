@@ -70,6 +70,25 @@ userSchema.statics.findByToken = function (token) {
     return decoded;
 };
 
+userSchema.statics.findBYCredentials = function (enrollment_number, password) {
+    var user = this;
+    return user.findOne({enrollment_number}).then((user) => {
+        if(!user) {
+            return Promise.reject();
+        } else {
+            return new Promise((resolve, reject) => {
+                bcrypt.compare(password, user.password, (err, res) => {
+                    if(res) {
+                        resolve(user);
+                    } else {
+                        reject();
+                    }
+                })
+            })
+        }
+    })
+};
+
 
 userSchema.pre('save', function (next) {
     var user = this;

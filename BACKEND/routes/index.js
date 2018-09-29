@@ -36,7 +36,14 @@ newUser.password = req.body.password;
   });
 });
 
-
+router.post('/login', function (req, res) {
+   User.findBYCredentials(req.body.enrollment_number, req.body.password).then((user) => {
+       var token = user.generateJWT();
+       res.header('x-auth', token).send(user);
+   }).catch((e) => {
+        res.status(400).send();
+   })
+});
 
 router.get('/profile', authenticate,function (req, res) {
   res.send(req.user);
