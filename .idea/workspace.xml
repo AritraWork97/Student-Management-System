@@ -4,6 +4,7 @@
     <list default="true" id="d2fa12ce-19ab-417f-805f-c2f70f7f8b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BACKEND/Database/user.js" afterPath="$PROJECT_DIR$/BACKEND/Database/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BACKEND/routes/index.js" afterPath="$PROJECT_DIR$/BACKEND/routes/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,23 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BACKEND/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+            <state relative-caret-position="458">
+              <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BACKEND/Database/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="61" column="56" lean-forward="false" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
+            <state relative-caret-position="1633">
+              <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
               <folding>
-                <marker date="1538159365180" expanded="true" signature="1248:1465" ph="{...}" />
+                <marker date="1538189238648" expanded="true" signature="1248:1465" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -67,8 +68,8 @@
         <option value="$PROJECT_DIR$/BACKEND/app.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/BACKEND/Database/SubjectDB.js" />
-        <option value="$PROJECT_DIR$/BACKEND/routes/index.js" />
         <option value="$PROJECT_DIR$/BACKEND/Database/user.js" />
+        <option value="$PROJECT_DIR$/BACKEND/routes/index.js" />
       </list>
     </option>
   </component>
@@ -113,7 +114,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -135,6 +135,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,7 +232,9 @@
       <workItem from="1538156369637" duration="679000" />
       <workItem from="1538158120576" duration="20000" />
       <workItem from="1538158158459" duration="90000" />
-      <workItem from="1538159325383" duration="164000" />
+      <workItem from="1538159325383" duration="229000" />
+      <workItem from="1538186394452" duration="1998000" />
+      <workItem from="1538189542003" duration="494000" />
     </task>
     <task id="LOCAL-00001" summary="The eroor is in the 'generateJWT' method. After saving the use in the index.js file, the returned user does not contain 'generateJWT' method.">
       <created>1538049570265</created>
@@ -254,11 +257,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538156218153</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="The token is now being saved to the database.">
+      <created>1538159514020</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538159514020</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65317000" />
+    <option name="totallyTimeSpent" value="67874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -291,7 +301,8 @@
     <MESSAGE value="The eroor is in the 'generateJWT' method. After saving the use in the index.js file, the returned user does not contain 'generateJWT' method." />
     <MESSAGE value="The previous error has been corrected." />
     <MESSAGE value="The token is not being saved to the database." />
-    <option name="LAST_COMMIT_MESSAGE" value="The token is not being saved to the database." />
+    <MESSAGE value="The token is now being saved to the database." />
+    <option name="LAST_COMMIT_MESSAGE" value="The token is now being saved to the database." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -313,7 +324,7 @@
         <state relative-caret-position="92">
           <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding>
-            <marker date="1538159365180" expanded="true" signature="1248:1465" ph="{...}" />
+            <marker date="1538189238648" expanded="true" signature="1248:1465" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -353,7 +364,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1538159365180" expanded="true" signature="1248:1465" ph="{...}" />
+            <marker date="1538189238648" expanded="true" signature="1248:1465" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -377,7 +388,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1538159365180" expanded="true" signature="1248:1465" ph="{...}" />
+            <marker date="1538189238648" expanded="true" signature="1248:1465" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -401,7 +412,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1538159365180" expanded="true" signature="1248:1465" ph="{...}" />
+            <marker date="1538189238648" expanded="true" signature="1248:1465" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -425,7 +436,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1538159365180" expanded="true" signature="1248:1465" ph="{...}" />
+            <marker date="1538189238648" expanded="true" signature="1248:1465" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -442,7 +453,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1538159365180" expanded="true" signature="1248:1465" ph="{...}" />
+            <marker date="1538189238648" expanded="true" signature="1248:1465" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -459,7 +470,7 @@
         <state relative-caret-position="897">
           <caret line="39" column="3" lean-forward="false" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
           <folding>
-            <marker date="1538159365180" expanded="true" signature="1248:1465" ph="{...}" />
+            <marker date="1538189238648" expanded="true" signature="1248:1465" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -610,21 +621,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BACKEND/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/BACKEND/Database/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="1633">
+          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+          <folding>
+            <marker date="1538189238648" expanded="true" signature="1248:1465" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BACKEND/Database/user.js">
+    <entry file="file://$PROJECT_DIR$/BACKEND/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="61" column="56" lean-forward="false" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
-          <folding>
-            <marker date="1538159365180" expanded="true" signature="1248:1465" ph="{...}" />
-          </folding>
+        <state relative-caret-position="458">
+          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -39,10 +39,12 @@ router.get('/profile', function (req, res) {
        'tokens.access' : 'auth'
    }).then(function (user) {
        if(!user) {
-
+            res.status(404).send();
+       } else {
+           console.log(user);
+           res.send(user);
        }
-       console.log(user);
-       res.send(user);
+
    })
 });
 
