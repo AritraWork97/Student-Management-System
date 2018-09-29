@@ -59,6 +59,17 @@ userSchema.methods.generateJWT = function () {
     return token;
 };
 
+userSchema.methods.removeToken = function (token) {
+    var user = this;
+    return user.updateOne({
+        $pull : {
+            'tokens' : {
+                token : token
+            }
+        }
+    });
+};
+
 userSchema.statics.findByToken = function (token) {
     var User = this;
     var decoded;

@@ -45,6 +45,14 @@ router.post('/login', function (req, res) {
    })
 });
 
+router.delete('/logout', authenticate, function (req, res) {
+   req.user.removeToken(req.token).then(() => {
+       res.status(200).send();
+   }, () => {
+       res.status(400).send();
+   });
+});
+
 router.get('/profile', authenticate,function (req, res) {
   res.send(req.user);
 });
