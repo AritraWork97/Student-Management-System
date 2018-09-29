@@ -4,13 +4,16 @@ const Promise = require('bluebird');
 
 const User = require('../Database/user');
 const Subject = require('../Database/SubjectDB');
+const authenticate = require('../middleware/authenticate');
+
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.post('/register', function (req, res) {
+router.post('/register',function (req, res) {
  
   var newUser = new User();
   var newSubject = new Subject();
@@ -30,22 +33,8 @@ router.post('/register', function (req, res) {
   });
 });
 
-router.get('/profile', function (req, res) {
-   var token = req.header('x-auth');
-   var decoded = User.findByToken(token);
-   User.findOne({
-       _id : decoded._id,
-       'tokens.token' : token,
-       'tokens.access' : 'auth'
-   }).then(function (user) {
-       if(!user) {
-            res.status(404).send();
-       } else {
-           console.log(user);
-           res.send(user);
-       }
-
-   })
+router.get('/profile', authenticate,function (req, res) {
+  res.send(req.user);
 });
 
 
