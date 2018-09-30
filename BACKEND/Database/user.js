@@ -61,11 +61,9 @@ userSchema.methods.generateJWT = function () {
 
 userSchema.methods.removeToken = function (token) {
     var user = this;
-    return user.updateOne({
+    return user.update({
         $pull : {
-            'tokens' : {
-                token : token
-            }
+            tokens : {token}
         }
     });
 };
